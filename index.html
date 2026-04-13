@@ -100,9 +100,16 @@
 <a class="font-manrope tracking-tight text-sm uppercase text-slate-400 hover:text-indigo-100 transition-colors" href="#experience">Experience</a>
 <a class="font-manrope tracking-tight text-sm uppercase text-slate-400 hover:text-indigo-100 transition-colors" href="#socials">Socials</a>
 </div>
-<button class="bg-gradient-primary text-on-primary-fixed px-8 py-2.5 rounded-full font-headline font-bold text-sm uppercase tracking-wider ambient-glow hover:scale-105 transition-transform duration-300">
+<button id="connectBtn" class="bg-gradient-primary text-on-primary-fixed px-8 py-2.5 rounded-full font-headline font-bold text-sm uppercase tracking-wider ambient-glow hover:scale-105 transition-transform duration-300">
                 Connect
             </button>
+            <script>
+                connectBtn = document.getElementById('connectBtn');
+                connectBtn.addEventListener('click', () => {
+                    // open LinkedIn page
+                    window.open('https://linkedin.com/in/laguerremarcus', '_blank').focus();
+                })
+            </script>
 </div>
 </nav>
 <main>
@@ -272,7 +279,7 @@
                     Open for select freelance opportunities and collaborative experiments. Let’s build something that lingers in the mind.
                 </p>
 <div class="flex flex-col md:flex-row justify-center gap-6">
-<a class="bg-gradient-primary text-on-primary-fixed px-12 py-5 rounded-full font-headline font-extrabold text-sm uppercase tracking-widest ambient-glow transition-all hover:scale-105" href="mailto:imarcraft@proton.me">
+<a id="inquiryButton" class="bg-gradient-primary text-on-primary-fixed px-12 py-5 rounded-full font-headline font-extrabold text-sm uppercase tracking-widest ambient-glow transition-all hover:scale-105" href="mailto:imarcraft@proton.me">
                         Send an Inquiry
                     </a>
 <div class="flex items-center justify-center gap-8 px-8 py-5">
