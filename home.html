@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#39485a",
+                        "surface-bright": "#31394d",
+                        "on-tertiary-fixed": "#301400",
+                        "error-container": "#93000a",
+                        "primary-container": "#7c87f3",
+                        "on-background": "#dae2fd",
+                        "error": "#ffb4ab",
+                        "secondary": "#b9c8de",
+                        "inverse-primary": "#4953bc",
+                        "surface-container-highest": "#2d3449",
+                        "secondary-fixed-dim": "#b9c8de",
+                        "inverse-surface": "#dae2fd",
+                        "primary": "#bdc2ff",
+                        "outline-variant": "#464554",
+                        "on-tertiary-container": "#452000",
+                        "secondary-container": "#39485a",
+                        "on-secondary-container": "#a7b6cc",
+                        "surface-container-low": "#131b2e",
+                        "primary-fixed-dim": "#bdc2ff",
+                        "on-primary": "#131e8c",
+                        "tertiary": "#ffb783",
+                        "on-primary-container": "#081486",
+                        "on-secondary": "#233143",
+                        "on-secondary-fixed": "#0d1c2d",
+                        "primary-fixed": "#e0e0ff",
+                        "on-primary-fixed-variant": "#2f3aa3",
+                        "surface-container-high": "#222a3d",
+                        "on-tertiary": "#4f2500",
+                        "surface-container-lowest": "#060e20",
+                        "surface-variant": "#2d3449",
+                        "on-surface": "#dae2fd",
+                        "on-surface-variant": "#c7c4d7",
+                        "on-error": "#690005",
+                        "on-tertiary-fixed-variant": "#703700",
+                        "secondary-fixed": "#d4e4fa",
+                        "surface-tint": "#bdc2ff",
+                        "surface-dim": "#0b1326",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#ffb783",
+                        "background": "#0b1326",
+                        "outline": "#908fa0",
+                        "surface-container": "#171f33",
+                        "tertiary-fixed": "#ffdcc5",
+                        "surface": "#0b1326",
+                        "inverse-on-surface": "#283044",
+                        "on-primary-fixed": "#000767"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-gradient-primary {
+            background: linear-gradient(135deg, #bdc2ff 0%, #7c87f3 100%);
+        }
+        .ambient-glow {
+            box-shadow: 0 0 32px rgba(189, 194, 255, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 bg-slate-950/60 backdrop-blur-xl transition-all duration-300 ease-out">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-indigo-100 font-headline">
+                Marcus Laguerre
+            </div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="font-manrope tracking-tight text-sm uppercase text-slate-400 hover:text-indigo-100 transition-colors" href="#about">About</a>
+<a class="font-manrope tracking-tight text-sm uppercase text-slate-400 hover:text-indigo-100 transition-colors" href="#projects">Projects</a>
+<a class="font-manrope tracking-tight text-sm uppercase text-slate-400 hover:text-indigo-100 transition-colors" href="#experience">Experience</a>
+<a class="font-manrope tracking-tight text-sm uppercase text-slate-400 hover:text-indigo-100 transition-colors" href="#socials">Socials</a>
+</div>
+<button class="bg-gradient-primary text-on-primary-fixed px-8 py-2.5 rounded-full font-headline font-bold text-sm uppercase tracking-wider ambient-glow hover:scale-105 transition-transform duration-300">
+                Connect
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center px-12 max-w-screen-2xl mx-auto overflow-hidden" id="about">
+<div class="w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7 z-10">
+<p class="text-primary font-headline font-bold text-sm tracking-[0.3em] uppercase mb-6">Digital Curator</p>
+<h1 class="text-on-surface font-headline font-extrabold text-7xl md:text-8xl tracking-tighter leading-[0.9] mb-8">
+                        Marcus
+                    </h1>
+<p class="text-on-surface-variant text-xl md:text-2xl max-w-xl font-light leading-relaxed mb-12">
+                        Crafting digital artifacts that bridge the void between raw logic and human intuition. 
+                        Engineering as an art form, curated for the modern era.
+                    </p>
+<div class="flex gap-6">
+<button class="bg-gradient-primary text-on-primary-fixed px-10 py-4 rounded-full font-headline font-extrabold text-sm uppercase tracking-widest">
+                            View Works
+                        </button>
+<button class="text-primary border border-primary/20 hover:border-primary/50 px-10 py-4 rounded-full font-headline font-extrabold text-sm uppercase tracking-widest transition-all">
+                            Philosophy
+                        </button>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden grayscale contrast-125 opacity-80 rotate-3 transition-transform hover:rotate-0 duration-700 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="" src="./images/professional-headshot.jpg"/>
+</div>
+<!-- Decorative Light Leak -->
+<div class="absolute -top-20 -right-20 w-64 h-64 bg-primary/20 blur-[120px] rounded-full"></div>
+</div>
+</div>
+</section>
+<!-- Engineering as Art Section (Content Spotlight) -->
+<section class="py-32 px-12 bg-surface-container-lowest">
+<div class="max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="order-2 md:order-1">
+<div class="p-12 rounded-2xl bg-surface-bright relative overflow-hidden group">
+<!-- Radial Gradient Light Leak -->
+<div class="absolute top-0 right-0 w-48 h-48 bg-radial-gradient from-primary/10 to-transparent blur-3xl"></div>
+<h3 class="text-primary font-headline text-3xl font-bold mb-6">Systems as Sculpture</h3>
+<p class="text-on-surface-variant leading-loose mb-8">
+                                I view code not as a utility, but as a medium. Every architecture choice is a stroke; every optimization is a refinement of form. My approach to engineering is subtractive—removing the noise until only the essential structure remains.
+                            </p>
+<div class="space-y-4">
+<div class="flex items-center gap-4 text-on-surface">
+<span class="material-symbols-outlined text-primary">terminal</span>
+<span class="font-label text-sm tracking-wide">Intentional Architecture</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+<span class="font-label text-sm tracking-wide">Aesthetic Performance</span>
+</div>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<h2 class="text-on-surface font-headline font-extrabold text-5xl tracking-tighter mb-8">
+                            Engineering as <br/><span class="text-primary italic">an Art Form</span>
+</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                            A manifesto on digital craftsmanship. Beyond the stack, beyond the framework, lies the soul of the product. I curate experiences that resonate long after the window is closed.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section (The Archive - Bento Grid) -->
+<section class="py-32 px-12 max-w-screen-2xl mx-auto" id="projects">
+<div class="flex justify-between items-end mb-16">
+<div>
+<p class="text-primary font-headline font-bold text-xs tracking-widest uppercase mb-4">Portfolio</p>
+<h2 class="text-on-surface font-headline font-extrabold text-6xl tracking-tighter">The Archive</h2>
+</div>
+<div class="hidden md:block text-on-surface-variant max-w-xs text-right text-sm">
+                    A curated selection of experiments and completed works from 2021-2024.
+                </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[300px]">
+<!-- Project 1: Large -->
+<div class="md:col-span-8 md:row-span-2 group relative overflow-hidden bg-surface-container-low rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-40" data-alt="Abstract dark blue and purple digital landscape with glowing connections and sharp geometric lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_gWsGXtFs9vq4NeGJbvgnVFFfd8XlwjvdJl1wnbpyDEZzryN1ospKZZBlhh_72MymAND5bbS-OHYY2NmUg0JMmYY_gPfW8o_lvvOTrQyBfP0qN2kIy5dIvy7GxBQiVShVJ_LH1ZgGgDO_wYMRoQ8CF6n5qQ0GHTVdaoPY64U-Hywfdlx5MEPSgBCHMfm-86Mv55WM8PM3YvC2WcsN3ekq_YFdFh0-Nj9uL2AvKMWQTw6bhaD_SrBrL8Lk8X0SGFtbl8v0HfFhb6c"/>
+<div class="absolute inset-0 p-12 flex flex-col justify-end bg-gradient-to-t from-background via-transparent to-transparent">
+<span class="text-primary-fixed-dim text-xs font-bold uppercase tracking-widest mb-2">Automation Tool</span>
+<h3 class="text-on-surface font-headline text-4xl font-bold tracking-tight mb-4">T.A.P.</h3>
+<p class="text-on-surface-variant max-w-md">An automated time-tracking application for increasing time management efficiency and planning.</p>
+</div>
+</div>
+<!-- Project 2: Vertical -->
+<div class="md:col-span-4 md:row-span-2 group relative overflow-hidden bg-surface-container-high rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-30" data-alt="Close up of futuristic glowing circuitry with deep shadows and soft indigo highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCv5b0DoU5imeNG8sBODFdt1DrLT8kJw68M6Hqqf23b8VJYAT8oWlOb4CVEjobs8IbzNophRtKGKAdgKwIaqMtSp2OLJz-_n5EqBuxO2GgIP1ECHVbv5SyxctmwkbwLM-mM-6e1xQKuTxJ07LEEJkMfcKzu3_jvn7biULUwScYNZSW-w64GWpID4bNSorw6yc5EJD_2Y6ct3mDV8rFJY_QlNky_dMgV_3LRKlfSjfJG6D2QJRl2gSRDqEmIXF9UC5U1VF7MM6wSxJ8"/>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<span class="text-primary-fixed-dim text-xs font-bold uppercase tracking-widest mb-2">Automation Tool</span>
+<h3 class="text-on-surface font-headline text-2xl font-bold tracking-tight mb-2">CI/CD With Jenkins</h3>
+<p class="text-on-surface-variant text-sm">Integrated testing and delivery pipeline for automated testing and deploying software safely.</p>
+</div>
+</div>
+<!-- Project 3: Horizontal -->
+<div class="md:col-span-6 group relative overflow-hidden bg-surface-container-high rounded-xl">
+<div class="absolute inset-0 p-8 flex flex-col justify-center border-l-4 border-primary/20 group-hover:border-primary transition-all">
+<span class="text-primary-fixed-dim text-xs font-bold uppercase tracking-widest mb-2">Management Tool</span>
+<h3 class="text-on-surface font-headline text-2xl font-bold tracking-tight mb-2">Inventory Management</h3>
+<p class="text-on-surface-variant text-sm">A full-stack application for tracking inventory of products, analyzing and creating reports.</p>
+</div>
+</div>
+<!-- Project 4: Horizontal -->
+<!-- <div class="md:col-span-6 group relative overflow-hidden bg-surface-container-low rounded-xl">
+<div class="absolute inset-0 p-8 flex flex-col justify-center border-l-4 border-primary/20 group-hover:border-primary transition-all">
+<span class="text-primary-fixed-dim text-xs font-bold uppercase tracking-widest mb-2">Category</span>
+<h3 class="text-on-surface font-headline text-2xl font-bold tracking-tight mb-2">Project Title</h3>
+<p class="text-on-surface-variant text-sm">Project Description.</p>
+</div>
+</div> -->
+</div>
+</section>
+<!-- Progression Section (Experience Timeline) -->
+<section class="py-32 px-12 bg-surface-container-lowest" id="experience">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-on-surface font-headline font-extrabold text-5xl tracking-tighter mb-24 text-center">Progression</h2>
+<div class="space-y-0">
+<!-- Experience Item 1 -->
+<div class="grid grid-cols-1 md:grid-cols-12 py-12 group">
+<div class="md:col-span-3 text-primary font-headline font-bold text-sm tracking-widest uppercase py-1">2026 — Present</div>
+<div class="md:col-span-9 border-l border-outline-variant/30 pl-12 pb-12 relative">
+<div class="absolute -left-1 top-2 w-2 h-2 rounded-full bg-primary ring-4 ring-primary/20"></div>
+<h4 class="text-on-surface text-2xl font-headline font-bold mb-2">GenSpark Trainee</h4>
+<p class="text-indigo-200 font-medium mb-4">Pyramid Consultant Inc.</p>
+<p class="text-on-surface-variant leading-relaxed">
+                                Integrating new technologies with AI to create the ultimate user experience for call centers, heightening efficiency and lowering call time with quick relavent solutions.
+                            </p>
+</div>
+</div>
+<!-- Experience Item 2 -->
+<div class="grid grid-cols-1 md:grid-cols-12 py-12 group">
+<div class="md:col-span-3 text-slate-500 font-headline font-bold text-sm tracking-widest uppercase py-1">2025</div>
+<div class="md:col-span-9 border-l border-outline-variant/30 pl-12 pb-12 relative">
+<div class="absolute -left-1 top-2 w-2 h-2 rounded-full bg-outline-variant"></div>
+<h4 class="text-on-surface text-2xl font-headline font-bold mb-2">Full-Stack Software Engineer</h4>
+<p class="text-indigo-200 font-medium mb-4">SkillStorm Comercial Services, LLC</p>
+<p class="text-on-surface-variant leading-relaxed">
+                                Built applications that prioritized quick return time and exceptional user experience.
+                            </p>
+</div>
+</div>
+<!-- Experience Item 3 -->
+<!-- <div class="grid grid-cols-1 md:grid-cols-12 py-12 group">
+<div class="md:col-span-3 text-slate-500 font-headline font-bold text-sm tracking-widest uppercase py-1">StartYear - EndYear</div>
+<div class="md:col-span-9 border-l border-outline-variant/30 pl-12 pb-12 relative">
+<div class="absolute -left-1 top-2 w-2 h-2 rounded-full bg-outline-variant"></div>
+<h4 class="text-on-surface text-2xl font-headline font-bold mb-2">Position Title</h4>
+<p class="text-indigo-200 font-medium mb-4">Company</p>
+<p class="text-on-surface-variant leading-relaxed">
+                                Brief role description.
+                            </p>
+</div>
+</div> -->
+</div>
+</div>
+</section>
+<!-- Connect Section (Start the Conversation) -->
+<section class="py-32 px-12 max-w-screen-xl mx-auto text-center" id="socials">
+<div class="bg-surface-container-high p-20 rounded-3xl relative overflow-hidden">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1 bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
+<h2 class="text-on-surface font-headline font-extrabold text-5xl md:text-7xl tracking-tighter mb-8">Start the Conversation</h2>
+<p class="text-on-surface-variant text-xl max-w-2xl mx-auto mb-12">
+                    Open for select freelance opportunities and collaborative experiments. Let’s build something that lingers in the mind.
+                </p>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<a class="bg-gradient-primary text-on-primary-fixed px-12 py-5 rounded-full font-headline font-extrabold text-sm uppercase tracking-widest ambient-glow transition-all hover:scale-105" href="mailto:curator@nocturnal.com">
+                        Send an Inquiry
+                    </a>
+<div class="flex items-center justify-center gap-8 px-8 py-5">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">link</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 w-full py-12 px-12 mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 border-t border-slate-800/30 pt-8 max-w-screen-2xl mx-auto">
+<div class="font-inter text-xs tracking-wide text-slate-500">
+                © 2026 Marcus Laguerre. Built with Intentionality.
+            </div>
+<div class="flex gap-8">
+<!-- <a class="font-inter text-xs tracking-wide text-slate-600 hover:text-indigo-200 transition-colors uppercase" href="#">Privacy Policy</a> -->
+<!-- <a class="font-inter text-xs tracking-wide text-slate-600 hover:text-indigo-200 transition-colors uppercase" href="#">Terms of Service</a> -->
+<a class="font-inter text-xs tracking-wide text-slate-600 hover:text-indigo-200 transition-colors uppercase" href="#">Archive</a>
+</div>
+</div>
+</footer>
+</body></html>
